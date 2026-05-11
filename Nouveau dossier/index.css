@@ -8,10 +8,12 @@
 }
 
 body {
-    background: linear-gradient(135deg, #ffa80623, #ff6a00);
+    background: linear-gradient(135deg, #ffa80623, #ff6a0007);
     min-height: 100vh;
     color: #dddada;
-    overflow-x: hidden;
+    background-image: url(langing.png);
+    background-attachment: fixed;
+    backdrop-filter: blur(12px);
     background-color: transparent;
 }
 
@@ -27,7 +29,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
 }
 
 .logo p {
@@ -164,7 +166,7 @@ ul li a:hover {
     max-width: 700px;
     margin: 40px auto;
     padding: 40px;
-    background: #ffffff;
+    background: #ffffff56;
     border-radius: 24px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
