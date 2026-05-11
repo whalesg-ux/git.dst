@@ -1,10 +1,10 @@
-# 🚚 J’vais aussi — Plateforme d’envoi de colis au Bénin
+# J’vais aussi — Plateforme d’envoi de colis au Bénin
 
 Une plateforme moderne de livraison et d’envoi de colis permettant aux utilisateurs d’expédier, suivre et recevoir leurs colis rapidement partout au Bénin.
 
 ---
 
-# 🌍 À propos
+# À propos
 
 J’vais aussi est une solution locale pensée pour simplifier l’envoi de colis entre les villes du Bénin :
 
@@ -17,27 +17,27 @@ J’vais aussi est une solution locale pensée pour simplifier l’envoi de coli
 
 Notre objectif est de rendre la livraison :
 
-✅ rapide  
-✅ sécurisée  
-✅ transparente  
-✅ accessible à tous  
+- rapide
+- sécurisée
+- transparente
+- accessible à tous
 
 ---
 
-# ⭐ Fonctionnalités
+# Fonctionnalités
 
-- 📦 Envoi de colis
-- 🚚 Suivi des livraisons
-- ⭐ Système d’avis et témoignages
-- 💬 Commentaires clients
-- 📱 Interface responsive mobile
-- 🔒 Livraison sécurisée
-- 💰 Tarifs transparents
-- 🌍 Couverture multi-villes
+- Envoi de colis
+- Suivi des livraisons
+- Système d’avis et témoignages
+- Commentaires clients
+- Interface responsive mobile
+- Livraison sécurisée
+- Tarifs transparents
+- Couverture multi-villes
 
 ---
 
-# 🖥️ Technologies utilisées
+# Technologies utilisées
 
 | Technologie | Description |
 |---|---|
@@ -49,7 +49,7 @@ Notre objectif est de rendre la livraison :
 
 ---
 
-# 📂 Structure du projet
+# Structure du projet
 
 ```bash
 Jvais-aussi/
@@ -66,7 +66,7 @@ Jvais-aussi/
 
 ---
 
-# 🎨 Design & UI/UX
+# Design & UI/UX
 
 Le design est basé sur :
 
@@ -78,7 +78,7 @@ Le design est basé sur :
 
 ---
 
-# 📸 Aperçu
+# Aperçu
 
 ## Home Page
 
@@ -90,12 +90,12 @@ Le design est basé sur :
 
 ---
 
-# 🚀 Installation
+# Installation
 
 Clone le projet :
 
 ```bash
-git clone https://github.com/whalesg/dst.git
+git clone https://github.com/whalesg-ux/Jvais-aussi.git
 ```
 
 Accède au dossier :
@@ -114,28 +114,29 @@ dans votre navigateur.
 
 ---
 
-# 📱 Responsive Design
+# Responsive Design
 
-Le projet sera entièrement compatible :
+Le projet est entièrement compatible :
 
-- 📱 Mobile
-- 💻 Desktop
-- 📲 Tablette
+- Mobile
+- Desktop
+- Tablette
 
 ---
 
-# 🔥 Fonctionnalités futures
+# Fonctionnalités futures
 
 - Authentification utilisateur
 - Dashboard administrateur
 - Paiement mobile money
 - API de suivi colis
 - Notifications SMS
-- Application mobile "Android/iOS"
-- Base de données Firebase/MySQL "En cours" pour l'instant dispo sur vercel
+- Application mobile Android/iOS
+- Base de données Firebase/MySQL
 
+---
 
-# ⭐ Témoignages
+# Témoignages
 
 > “Service rapide et fiable.”
 > — Client satisfait
@@ -145,19 +146,19 @@ Le projet sera entièrement compatible :
 
 ---
 
-# 👨‍💻 Auteur
+# Auteur
 
 Développé par Ezechiel Tchokponhoue
 
 ---
 
-# 📄 Licence
+# Licence
 
 Projet open source libre d’utilisation.
 
 ---
 
-# 🤝 Contribution
+# Contribution
 
 Les contributions sont les bienvenues.
 
@@ -169,9 +170,9 @@ Les contributions sont les bienvenues.
 
 ---
 
-# 📞 Contact
+# Contact
 
-📧 Email : tchokponhoueezechiel@gmail.com
+Email : tchokponhoueezechiel@gmail.com
 
-🌍 GitHub :
-https://github.com/VOTRE-USERNAME
+GitHub :
+https://github.com/whalesg-ux
