@@ -1,14 +1,12 @@
-// ==================== SCRIPT COMMUN (Connexion + Inscription) ====================
+// ====================== SCRIPT COMMUN (Connexion + Inscription) ======================
 
 document.addEventListener('DOMContentLoaded', () => {
 
     // ====================== TOGGLE MOT DE PASSE ======================
     const toggleIcons = document.querySelectorAll('.toggle-password');
-
     toggleIcons.forEach(icon => {
         icon.addEventListener('click', () => {
-            const input = icon.previousElementSibling; // L'input juste avant l'icône
-
+            const input = icon.previousElementSibling;
             if (input.type === 'password') {
                 input.type = 'text';
                 icon.classList.remove('fa-eye-slash');
@@ -34,9 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Ici tu pourras plus tard faire une vraie connexion (API, etc.)
-            alert("Connexion en cours... ✅");
-            // window.location.href = "accueil.html"; // Redirection après connexion
+            alert("✅ Connexion réussie !\nRedirection vers l'espace envoi...");
+
+            // Redirection vers la future page d'envoi de colis
+            setTimeout(() => {
+                window.location.href = "envoyer.html";   // ← Change le nom si tu veux
+            }, 1500);
         });
     }
 
@@ -51,31 +52,31 @@ document.addEventListener('DOMContentLoaded', () => {
             const password = document.getElementById('password').value;
             const confirmPassword = document.getElementById('confirm-password').value;
 
-            // Vérification des champs vides
             if (!nom || !prenom || !email || !password || !confirmPassword) {
                 alert("Veuillez remplir tous les champs !");
                 return;
             }
 
-            // Vérification de la correspondance des mots de passe
             if (password !== confirmPassword) {
                 alert("Les mots de passe ne correspondent pas !");
                 return;
             }
 
-            // Vérification de la longueur du mot de passe
             if (password.length < 6) {
                 alert("Le mot de passe doit contenir au moins 6 caractères !");
                 return;
             }
 
-            // Simulation d'inscription réussie
-            alert("Inscription réussie ! 🎉\nBienvenue " + prenom + " " + nom);
-            // window.location.href = "index.html"; // Redirection vers la page de connexion
+            alert("✅ Inscription réussie !\nBienvenue " + prenom + " " + nom + "\n\nVous allez être redirigé vers la page de connexion.");
+
+            // Après inscription → on redirige vers la page de connexion
+            setTimeout(() => {
+                window.location.href = "index2.html";
+            }, 1800);
         });
     }
 
-    // Optionnel : Soumettre avec la touche Entrée
+    // ====================== SOUMISSION AVEC TOUCHE ENTRÉE ======================
     const inputs = document.querySelectorAll('input');
     inputs.forEach(input => {
         input.addEventListener('keypress', (e) => {
@@ -85,4 +86,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
 });
