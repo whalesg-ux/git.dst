@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+    }
+body{ 
+    background-color:#ffa806;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    background: transparent;
+    background-image: url('langing.png');
+    backdrop-filter: blur(22px);
+}
+header {
+    margin : 20px 8%;
+}
+
+ section {
+        padding: 70% 8%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ }
+    .logo
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+.logo-div
+{
+    width: bold;
+}
+.logo span
+{
+    color:rgb(255, 0, 191)
+}
+ul 
+{
+    display: flex;
+    justify-content: center;
+
+    width: 40%;
+    list-style: none;
+    }
+ul li 
+{
+    padding: 10px 25px;
+}
+ul li a 
+{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    transition:  0.15s ;
+    font-size: 14px;
+    font-weight: bold;
+}
+ul li a:hover 
+{
+    background-color:rgb(255, 0, 170);
+    padding: 15px;
+    color:rgba(255, 208, 0, 0.918);
+    font-weight: bold;
+    border-radius: 20px;
+    transform: rotate(20deg);
+}
+.btn-header
+{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.btn1-header
+{
+    padding: 15px 30px;
+    background-color: red;
+    color: white;
+    border: 2px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn
+{
+    padding: 15px 30px;
+    background-color: rgb(245, 0, 192);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(245, 0, 192);
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.281);
+    cursor: pointer;
+}
+.btn:hover
+{
+    background-color: rgba(248, 9, 248, 0.555);
+    transform: rotate(60deg);
+}
+.btn1
+{
+    padding: 15px 30px;
+    background-color: #ffa806;
+    color: #ffffff;
+    border: 2px solid #ffa806;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 30px rgba(43, 42, 42, 0.432);
+    transition:0.5s;
+}
+
+.btn1:hover
+{
+    background-color: rgba(255, 230, 0, 0.486);
+    transform:rotate(-90deg);
+}
+.btn-button
+{
+    margin:1px;
+    display:center;
+    font-size:15px;
+    content: end;
+    color: white;
+    background-color: rgb(246, 244, 247);
+    border: 2px;
+    border-radius:30px;
+}
+.btn-button2
+{
+    margin:1;
+    display: center;
+    content: end;
+    display: flex;
+    font-size: 15px;
+    background-color: rgba(255, 0, 200, 0.856);
+    background: transparent;
+    color: white;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: rgb(143, 23, 23) solid;
+}
+.livre1
+{
+    font:100;
+    color:bisque
+    
+}
+.livre2
+{ 
+    font:100;
+    color:bisque
+    }
+.paraph
+{
+    font-size:15px;
+    display: flex;
+    justify-content: center;
+}    
+.tbl
+{
+    margin-top: auto;
+    justify-content: center;
+}
