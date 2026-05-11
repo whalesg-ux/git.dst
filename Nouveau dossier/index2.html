@@ -1,38 +1,47 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
-  <head> 
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width,initial-scake.0">
-    <title>J'vais aussi</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
     <link rel="stylesheet" href="index2.css">
     <script src="https://kit.fontawesome.com/9593a43a8e.js" crossorigin="anonymous"></script>
-    </head>
-    <script src="scripte.js"></script>
-    <body>
-      <section>
+</head>
+<body>
+    
+    <section>
         <h1>CONNEXION</h1>
+        
         <div class="input-box">
-            <input type="tel" placeholder="Numero de Compte">
-            </div>
-            <i class="fa-solid fa-user"></i>
+            <input type="tel" placeholder="Numéro de Compte" id="account">
+        </div>
+
         <div class="input-box">
-                <input type="password" placeholder="Mot de Passe"> 
-              </div>
-             <i class="fa-solid fa-lock"></i>
-                    
-                </div class="remember-forgot">
-                <label><input type="checkbox">Se souvenir de moi</label>
-                <a href="#">Mot de Passe Oublié?</a>
-                </div>
-                <div class="login-btn">
-                  <input login
-                <div class="button"></div>
-                <button>Se Connecter</button>
-              </div>
-                <div class="register-link"></div>
-                <p>Pas de compte?<a href="inscription.html">S'inscrire</a></p>
-                </div>
-              </section> 
-            </body>
-      </html>
+            <input type="password" placeholder="Mot de Passe" id="password">
+        </div>
+
+        <div class="remember-forgot">
+            <label>
+                <input type="checkbox"> Se souvenir de moi
+            </label>
+            <a href="#">Mot de passe oublié ?</a>
+        </div>
+
+        <div class="login-btn">
+            <button type="button" id="loginButton">
+                Se Connecter
+            </button>
+        </div>
+
+        <div class="register-link">
+            <p>
+                Pas de compte ? 
+                <a href="inscription.html">S'inscrire</a>
+            </p>
+        </div>
+    </section>
+
+    <script src="index2.js"></script>
+</body>
+</html>

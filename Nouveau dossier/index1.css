@@ -1,171 +1,376 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Saira", sans-serif;
-    }
-body{ 
-    background-color:#ffa806;
-    display: flexbox;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    flex-direction: column;
-    background: transparent;
-    background-image: url('langing.png');
-    backdrop-filter: blur(22px);
-}
-header {
-    margin : 20px 8%;
 }
 
- section {
-        padding: 70% 8%;
+body {
+    background: linear-gradient(135deg, #ffa80623, #ff6a00);
+    min-height: 100vh;
+    color: #dddada;
+    overflow-x: hidden;
+    background-color: transparent;
 }
+
+/* ====================== HEADER ====================== */
 header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 15px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
- }
-    .logo
-{
-    font-weight: bold;
-    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-.logo-div
-{
-    width: bold;
+
+.logo p {
+    font-size: 32px;
+    font-weight: 900;
+    color: #2c3e50;
 }
-.logo span
-{
-    color:rgb(255, 0, 191)
+
+.logo span {
+    color: rgb(255, 0, 191); /* Rose vif */
 }
-ul 
-{
+
+/* Navigation */
+ul {
     display: flex;
     justify-content: center;
-
     width: 40%;
     list-style: none;
-    }
-ul li 
-{
-    padding: 10px 25px;
+    gap: 8px;
 }
-ul li a 
-{
+
+ul li a {
     text-decoration: none;
-    color:rgb(0, 0, 0);
-    transition:  0.15s ;
-    font-size: 14px;
+    color: rgb(0, 0, 0);
     font-weight: bold;
-}
-ul li a:hover 
-{
-    background-color:rgb(255, 0, 170);
-    padding: 15px;
-    color:rgba(255, 208, 0, 0.918);
-    font-weight: bold;
-    border-radius: 20px;
-    transform: rotate(20deg);
-}
-.btn-header
-{
-    display: flex;
-    justify-content: center;
-    width: 30%;
-}
-.btn1-header
-{
-    padding: 15px 30px;
-    background-color: red;
-    color: white;
-    border: 2px;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.btn
-{
-    padding: 15px 30px;
-    background-color: rgb(245, 0, 192);
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(245, 0, 192);
-    border-radius: 20px;
-    font-weight: bold;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.281);
-    cursor: pointer;
-}
-.btn:hover
-{
-    background-color: rgba(248, 9, 248, 0.555);
-    transform: rotate(60deg);
-}
-.btn1
-{
-    padding: 15px 30px;
-    background-color: #ffa806;
-    color: #ffffff;
-    border: 2px solid #ffa806;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 5px 5px 30px rgba(43, 42, 42, 0.432);
-    transition:0.5s;
-}
-
-.btn1:hover
-{
-    background-color: rgba(255, 230, 0, 0.486);
-    transform:rotate(-90deg);
-}
-.btn-button
-{
-    margin:1px;
-    display:center;
-    font-size:15px;
-    content: end;
-    color: white;
-    background-color: rgb(246, 244, 247);
-    border: 2px;
-    border-radius:30px;
-}
-.btn-button2
-{
-    margin:1;
-    display: center;
-    content: end;
-    display: flex;
     font-size: 15px;
-    background-color: rgba(255, 0, 200, 0.856);
-    background: transparent;
+    padding: 10px 20px;
+    transition: all 0.4s ease;
+    border-radius: 25px;
+}
+
+ul li a:hover {
+    background-color: rgb(255, 0, 170); /* Rose */
+    color: #fff;
+    transform: rotate(8deg) scale(1.1);   /* Rotation douce */
+    box-shadow: 0 5px 15px rgba(255, 0, 170, 0.4);
+}
+
+/* Boutons Header */
+.btn-header {
+    display: flex;
+    gap: 15px;
+}
+
+.btn, .btn1 {
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-size: 15px;
+    border: none;
+}
+
+.btn {
+    background-color: rgb(245, 0, 192); /* Rose */
     color: white;
-    border: 1px solid;
-    border-radius: 30px;
-    border-color: rgb(143, 23, 23) solid;
+    box-shadow: 0 6px 20px rgba(245, 0, 192, 0.4);
 }
-.livre1
-{
-    font:100;
-    color:bisque
-    
+
+.btn:hover {
+    background-color: rgb(200, 0, 160);
+    transform: rotate(12deg) scale(1.08);
 }
-.livre2
-{ 
-    font:100;
-    color:bisque
-    }
-.paraph
-{
-    font-size:15px;
+
+.btn1 {
+    background-color: #ffa806; /* Orange */
+    color: white;
+    border: 2px solid #ff8c00;
+    box-shadow: 0 6px 20px rgba(255, 168, 6, 0.4);;
+}
+
+.btn1:hover {
+    background-color: #ff8c00;
+    transform: rotate(-8deg) scale(1.08);
+}
+
+/* ====================== HERO SECTION ====================== */
+.hero {
+    text-align: center;
+    padding: 100px 5% 70px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.livre2 {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 45px;
+    color: bisque;
+    line-height: 1.5;
+}
+
+.hero-buttons {
     display: flex;
     justify-content: center;
-}    
-.tbl
-{
-    margin-top: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ====================== STATISTIQUES ====================== */
+.statistique {
+    padding: 70px 5%;
+    text-align: center;
+}
+
+.stats-grid {
+    display: flex;
     justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.stat-item h3 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.stat-item p {
+    color: bisque;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ====================== SECTION AVIS ====================== */
+.review-section {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    text-align: center;
+    color: rgb(245, 0, 192); /* Rose */
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 16px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+    border-color: rgb(245, 0, 192);
+    box-shadow: 0 0 0 4px rgba(245, 0, 192, 0.2);
+}
+
+.review-form textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+.review-form button {
+    padding: 16px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgb(245, 0, 192), rgb(255, 0, 170));
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.review-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(245, 0, 192, 0.4);
+}
+
+/* Etoiles */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 6px;
+}
+
+.star-rating input { display: none; }
+
+.star-rating label {
+    font-size: 48px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #FFD700;
+}
+
+/* Avis publiés */
+.reviews-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-card {
+    padding: 22px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 1px solid rgba(245, 0, 192, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    ul {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+/* ====================== HERO SECTION ====================== */
+.hero {
+    text-align: center;
+    padding: 120px 5% 90px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), 
+                linear-gradient(135deg, #ffa80621, #e7b89533);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Titre principal */
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    line-height: 1.1;
+}
+
+/* Texte de description */
+.livre2 {
+    font-size: 20px;
+    max-width: 780px;
+    margin: 0 auto 45px;
+    color: bisque;
+    line-height: 1.6;
+    font-weight: 500;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Conteneur des boutons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Bouton "Suivre mon colis" */
+.btn6 {
+    padding: 16px 36px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #c41ba7, #c41ba7);
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(189, 19, 160, 0.4);
+}
+
+.btn6:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(184, 5, 184, 0.5);
+}
+
+/* Bouton "Envoyer mon colis" */
+.btn7 {
+    padding: 16px 36px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgb(245, 0, 192), rgb(255, 0, 170));
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(245, 0, 192, 0.4);
+}
+
+.btn7:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(245, 0, 192, 0.5);
+}
+
+/* Version Mobile */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 5% 60px;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .livre2 {
+        font-size: 18px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn6, .btn7 {
+        width: 100%;
+        max-width: 320px;
+    }
 }

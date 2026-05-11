@@ -2,60 +2,95 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J'vais aussi</title>
+    <title>J'vais aussi - Livraison au Bénin</title>
     <link rel="stylesheet" href="index1.css">
+    <script src="https://kit.fontawesome.com/9593a43a8e.js" crossorigin="anonymous"></script>
 </head>
-<script src="scripte.js"></script>
 <body>
-    <header> 
+    
+    <header>
         <div class="logo-div">
             <div class="logo">
-              <p>J'vais auss<span>I</span></p>
+                <p>J'vais auss<span>I</span></p>
             </div>
         </div>
-        <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Envoyer</a></li>
-            <li><a href="H">Suivre</a></li>
-            <li><a href="#">Tarif</a></li>
-            <li><a href="#">Aide</a></li>
-        </ul>
-            </div>
-            <div .class-"btn-header">
-                <button class="btn">
-                <span><a href="inscription.html">S"inscrire</span></a>
-                </button>
-            <div .class-"btn1-header">
-                <button class="btn1">
-                <span><a href="index2.html">Se Connecter</a></span>
-                </button>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Envoyer</a></li>
+                <li><a href="#">Suivre</a></li>
+                <li><a href="#">Tarif</a></li>
+                <li><a href="#">Aide</a></li>
+            </ul>
+        </nav>
+
+        <div class="btn-header">
+            <button class="btn">S'inscrire</button>
+            <button class="btn1">Se Connecter</button>
+        </div>
     </header>
-    <h1>
-  <p class=- "livre1">Livraison rapide et fiable au Bénin</p>
-  <p> </h1>
-   <div .class-"livre2">
-  Envoyez et recevez vos colis en toute confiance. De Cotonou à Parakou, nous livrons partout au Bénin avec rapidité et sécurité.</p>
-</div>
-</p>
-<div .class-"btn6-button">
-    <buttton class="btn6">Suivre mon colis</buttton>
-</div>
-<div .class-"btn7-button">
-    <button class="btn7">Envoyer mon colis</button>
-</div>
-<div .class-"statistique"> 
-<h3></p> 1000+</p>      <p>Colis livrés</p>    <p> 98</p>        <p>Satisfaction </p>       <p> 24h </p>   <p>Livraison moyenne</p></h3>
 
+    <!-- Section Hero -->
+    <section class="hero">
+        <h1>Livraison rapide et fiable au Bénin</h1>
+        <p class="livre2">
+            Envoyez et recevez vos colis en toute confiance. De Cotonou à Parakou, nous livrons partout au Bénin avec rapidité et sécurité.
+        </p>
+        
+        <div class="hero-buttons">
+            <button class="btn6">Suivre mon colis</button>
+            <button class="btn7">Envoyer mon colis</button>
+        </div>
+    </section>
 
-                    <h1>Suivi en temps réel
-Suivez votre colis à chaque étape avec notre système de tracking avancé.
-GPS en direct Notifications SMS
-Application mobile;</h1>
-                </td>
-    </td>
-</tr>
-</table>
-</div>
+    <!-- Section Statistiques -->
+    <section class="statistique">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>1000+</h3>
+                <p>Colis livrés</p>
+            </div>
+            <div class="stat-item">
+                <h3>98%</h3>
+                <p>Satisfaction</p>
+            </div>
+            <div class="stat-item">
+                <h3>24h</h3>
+                <p>Livraison moyenne</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Avis Clients -->
+    <section class="review-section">
+        <h2 class="title">Avis de nos clients</h2>
+        <form class="review-form" id="reviewForm">
+            <input type="text" id="name" placeholder="Votre nom" required>
+            
+            <div class="star-rating">
+                <input type="radio" name="rating" id="star5" value="5">
+                <label for="star5">★</label>
+                <input type="radio" name="rating" id="star4" value="4">
+                <label for="star4">★</label>
+                <input type="radio" name="rating" id="star3" value="3">
+                <label for="star3">★</label>
+                <input type="radio" name="rating" id="star2" value="2">
+                <label for="star2">★</label>
+                <input type="radio" name="rating" id="star1" value="1">
+                <label for="star1">★</label>
+            </div>
+
+            <textarea id="comment" placeholder="Écrivez votre commentaire..." required></textarea>
+            
+            <button type="submit">Envoyer l'avis</button>
+        </form>
+
+        <div class="reviews-container" id="reviewsContainer"></div>
+    </section>
+
+    <script src="index1.js"></script>
 </body>
 </html>
