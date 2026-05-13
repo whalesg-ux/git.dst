@@ -6,53 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription - J'VAIS AUSSI</title>
     <link rel="stylesheet" href="inscription.css">
-      <link rel ="icon" href="favicon.co.png" type="image/x-icon">
+    <link rel="icon" href="favicon.co.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9593a43a8e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+   
     <section>
         <h1>INSCRIPTION</h1>
         
+        <!-- Formulaire d'inscription -->
         <div class="input-box">
             <input type="text" placeholder="Nom" id="nom">
-            <i class="fas fa-user"></i>
         </div>
-
         <div class="input-box">
             <input type="text" placeholder="Prénom" id="prenom">
-            <i class="fas fa-user"></i>
         </div>
-
         <div class="input-box">
             <input type="email" placeholder="Adresse e-mail" id="email">
-            <i class="fas fa-envelope"></i>
         </div>
-
         <div class="input-box">
             <input type="password" placeholder="Mot de Passe" id="password">
-            <i class="fas fa-eye-slash toggle-password"></i>
         </div>
-
         <div class="input-box">
             <input type="password" placeholder="Confirmer le Mot de Passe" id="confirm-password">
-            <i class="fas fa-eye-slash toggle-password"></i>
+        </div>
+        <div class="input-box">
+            <input type="tel" placeholder="Numéro de Téléphone" id="phone">
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Adresse" id="address">
         </div>
 
+        <!-- Pays -->
+        <!-- Pays -->
+<div class="input-box">
+    <select id="country" onchange="updateLabel()" required>
+        <option value="">-- Sélectionnez votre pays --</option>
+        <option value="BJ">Bénin</option>
+        <option value="BF">Burkina Faso</option>
+        <option value="CI">Côte d'Ivoire</option>
+        <option value="SN">Sénégal</option>
+        <option value="TG">Togo</option>
+        <!-- Ajoute les autres pays CEDEAO si tu veux -->
+    </select>
+</div>
+
+<!-- Commune / Ville -->
+<div class="input-box">
+    <input type="text" id="city" placeholder="Commune / Ville" required>
+</div>
+        <!-- Ville -->
+        <div class="input-box">
+            <select id="city" required>
+                <option value="">-- Sélectionnez d'abord un pays --</option>
+            </select>
+        </div>
+          
         <div class="login-btn">
             <button type="button" id="registerButton">
                 S'inscrire
             </button>
         </div>
-
         <div class="register-link">
             <p>
-                Déjà un compte ? 
+                Déjà un compte ?
                 <a href="index.html">Se connecter</a>
             </p>
         </div>
     </section>
 
     <script src="inscription.js"></script>
+
+    <!-- Script pour charger les villes -->
+    <script>
+        function chargerVilles() {
+            const pays = document.getElementById("country").value;
+            const villeSelect = document.getElementById("city");
+
+            villeSelect.innerHTML = '<option value="">-- Sélectionnez une ville --</option>';
+
+            if (pays === "BJ") {
+                const villes = ["Cotonou", "Porto-Novo", "Parakou", "Abomey", "Bohicon", "Lokossa", "Natitingou", "Djougou", "Ouidah"];
+                villes.forEach(ville => {
+                    let opt = document.createElement("option");
+                    opt.value = ville;
+                    opt.textContent = ville;
+                    villeSelect.appendChild(opt);
+                });
+            }
+            // Tu peux ajouter d'autres pays ici plus tard
+        }
+    </script>
 </body>
 </html>

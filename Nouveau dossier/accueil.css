@@ -5,3 +5,36 @@
     box-sizing: border-box;
     font-family: "Saira Condensed", sans-serif;
 }
+.button-btn {
+    display: flex; /*Mets les boutons sur la même ligne*/
+    gap:20px; /*Espace entre les boutons*/
+    justify-content: center; /*Centre les boutons horizontalement*/
+    margin-top: 10px; /*Espace au-dessus des boutons*/
+    border-radius: 10px; /* Arrondir les coins du bouton */
+}
+
+.button-btn1 button
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  10px;
+    width: 200px;
+    color:#ffffff;
+    background-color: #E03F9E;
+    border: 10px solid #E03F9E;
+    border-radius: 10px;
+    cursor: pointer
+    ;
+}
+.button-btn2 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    width: 199px;
+    color:#eecd14;
+    background-color: #e03f9d17;
+    border: 1px solid #ffdb12;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('langing.png'); /* corrige "langing.png" si besoin */
+    background-image: url('langing.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -29,7 +29,6 @@ section {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-/* Titre */
 section h1 {
     font-size: 32px;
     font-weight: 700;
@@ -39,17 +38,18 @@ section h1 {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Conteneurs des inputs */
+/* Conteneurs */
 .input-box {
     position: relative;
     width: 100%;
     margin-bottom: 25px;
 }
 
-.input-box input {
+/* Inputs et Selects */
+.input-box input,
+.input-box select {
     width: 100%;
     padding: 16px 20px;
-    padding-right: 50px;
     border-radius: 50px;
     outline: none;
     background: rgba(255, 255, 255, 0.2);
@@ -60,72 +60,37 @@ section h1 {
     transition: all 0.3s ease;
 }
 
-.input-box input::placeholder {
-    color: rgba(255, 255, 255, 0.75);
-}
-
-.input-box input:focus {
+/* Focus */
+.input-box input:focus,
+.input-box select:focus {
     background: rgba(255, 255, 255, 0.35);
     border-color: rgb(80, 0, 69);
     box-shadow: 0 0 0 3px rgba(80, 0, 69, 0.25);
 }
 
-/* Icônes */
-.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 18px;
+/* Bouton S'inscrire */
+.login-btn {
+    margin-top: 15px;
 }
 
-/* Bouton Se Connecter */
 .login-btn button {
     width: 100%;
     padding: 16px;
-    margin-top: 10px;
     border-radius: 50px;
     border: none;
-    background: linear-gradient(135deg, rgb(80, 0, 69), rgb(140, 0, 110));
-    color: white;
-    font-size: 18px;
+    background-color: #e03f9d;
+    color: #fff;
+    font-size: 17px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(80, 0, 69, 0.4);
+    box-shadow: 0 8px 25px rgba(224, 63, 157, 0.4);
 }
 
 .login-btn button:hover {
+    background-color: #c82e85;
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(80, 0, 69, 0.5);
-}
-
-/* Remember & Forgot */
-.remember-forgot {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-    color: #ffffff;
-    font-size: 14.5px;
-}
-
-.remember-forgot label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-}
-
-.remember-forgot a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.remember-forgot a:hover {
-    text-decoration: underline;
+    box-shadow: 0 12px 30px rgba(224, 63, 157, 0.5);
 }
 
 /* Lien d'inscription */
