@@ -107,7 +107,7 @@ cd Jvais-aussi
 Lance ensuite :
 
 ```bash
-index.html
+jvaisaussi.vercel.com
 ```
 
 dans votre navigateur.
