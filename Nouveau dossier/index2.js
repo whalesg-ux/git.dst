@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Redirection après 1.5 secondes (à modifier selon tes besoins)
             setTimeout(() => {
-                window.location.href = "index1.html"; // Page d'accueil
+                window.location.href = "accueil.html"; // Page d'accueil
             }, 1500);
         });
     }

@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Redirection vers la future page d'envoi de colis
             setTimeout(() => {
-                window.location.href = "envoyer.html";   // ← Change le nom si tu veux
+                window.location.href = "accueil.html";   // ← Change le nom si tu veux
             }, 1500);
         });
     }
@@ -88,3 +88,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+/**
+ * Charge dynamiquement les villes selon le pays sélectionné.
+ */
+function chargerVilles() {
+    const pays = document.getElementById("country").value;
+    const villeSelect = document.getElementById("city");
+
+    if (!villeSelect) return;
+
+    villeSelect.innerHTML = '<option value="">-- Sélectionnez une ville --</option>';
+
+    if (pays === "BJ") {
+        const villes = ["Cotonou", "Porto-Novo", "Parakou", "Abomey", "Bohicon", "Lokossa", "Natitingou", "Djougou", "Ouidah"];
+        villes.forEach(ville => {
+            let opt = document.createElement("option");
+            opt.value = ville;
+            opt.textContent = ville;
+            villeSelect.appendChild(opt);
+        });
+    }
+    // Possibilité d'ajouter d'autres pays ici (BF, CI, SN, TG)
+}

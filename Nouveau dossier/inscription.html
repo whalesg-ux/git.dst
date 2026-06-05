@@ -38,23 +38,17 @@
         </div>
 
         <!-- Pays -->
-        <!-- Pays -->
-<div class="input-box">
-    <select id="country" onchange="updateLabel()" required>
-        <option value="">-- Sélectionnez votre pays --</option>
-        <option value="BJ">Bénin</option>
-        <option value="BF">Burkina Faso</option>
-        <option value="CI">Côte d'Ivoire</option>
-        <option value="SN">Sénégal</option>
-        <option value="TG">Togo</option>
-        <!-- Ajoute les autres pays CEDEAO si tu veux -->
-    </select>
-</div>
+        <div class="input-box">
+            <select id="country" onchange="chargerVilles()" required>
+                <option value="">-- Sélectionnez votre pays --</option>
+                <option value="BJ">Bénin</option>
+                <option value="BF">Burkina Faso</option>
+                <option value="CI">Côte d'Ivoire</option>
+                <option value="SN">Sénégal</option>
+                <option value="TG">Togo</option>
+            </select>
+        </div>
 
-<!-- Commune / Ville -->
-<div class="input-box">
-    <input type="text" id="city" placeholder="Commune / Ville" required>
-</div>
         <!-- Ville -->
         <div class="input-box">
             <select id="city" required>
@@ -70,32 +64,11 @@
         <div class="register-link">
             <p>
                 Déjà un compte ?
-                <a href="index.html">Se connecter</a>
+                <a href="index2.html">Se connecter</a>
             </p>
         </div>
     </section>
 
     <script src="inscription.js"></script>
-
-    <!-- Script pour charger les villes -->
-    <script>
-        function chargerVilles() {
-            const pays = document.getElementById("country").value;
-            const villeSelect = document.getElementById("city");
-
-            villeSelect.innerHTML = '<option value="">-- Sélectionnez une ville --</option>';
-
-            if (pays === "BJ") {
-                const villes = ["Cotonou", "Porto-Novo", "Parakou", "Abomey", "Bohicon", "Lokossa", "Natitingou", "Djougou", "Ouidah"];
-                villes.forEach(ville => {
-                    let opt = document.createElement("option");
-                    opt.value = ville;
-                    opt.textContent = ville;
-                    villeSelect.appendChild(opt);
-                });
-            }
-            // Tu peux ajouter d'autres pays ici plus tard
-        }
-    </script>
 </body>
 </html>
